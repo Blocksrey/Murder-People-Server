@@ -1,17 +1,17 @@
 {
-  "name": "js-fundamentals-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "socket.io": "^2.1.1"
-  }
+	"name": "simple-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "LOL",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.14.1"
+	},
+	"scripts": {
+		"start": "node index.js"
+	}
 }
