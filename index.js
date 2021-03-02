@@ -11,18 +11,12 @@ app.get("/", receive);
 */
 
 
-
-var port = process.env.PORT || 3000;
-
 app.get("/", function(req, res) {
 	res.setHeader('Content-Type', 'application/json');
 	res.send('<!DOCTYPE html><head><meta charset="UTF-8"><meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></head><body>Welcome to NodeJS App on Heroku</body></html>');
 });
 
-app.listen(port);
-
-
-
+app.listen(8080);
 
 
 function debug() {
