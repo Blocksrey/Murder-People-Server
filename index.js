@@ -1,9 +1,7 @@
-const http = require('http');
+var express = require("express");
+var app = express();
 
-const requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('Hello, World!');
-}
-
-const server = http.createServer(requestListener);
-server.listen(8080);
+app.get("/asd", function(request, response) {
+	response.writeHead(200, {"Content-Type": "application/json"});
+    response.send(JSON.stringify({message: 'Got the email'}));
+})
