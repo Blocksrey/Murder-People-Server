@@ -9,3 +9,5 @@ function receive(request, res) {
 }
 
 http.createServer(receive).listen(8080);
+
+console.log("WOAHAHAHAHHHHHHHHHHHHH!!!!!!!!!!!!");
