@@ -6,8 +6,8 @@ function receive(request, response) {
 	console.log(request);
 
 	response.setHeader("Content-Type", "application/json");
-	
-	response.send("WTF");
+
+	response.send(JSON.stringify("WTF"));
 }
 
 app.get("/", receive);
