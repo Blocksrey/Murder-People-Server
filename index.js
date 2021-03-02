@@ -6,7 +6,7 @@ function receive(request, response) {
 	res.send("THIS IS A RESPONSE!!!!!!!!!");
 }
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
 
 /*
 function debug() {
