@@ -3,7 +3,7 @@ var app = express();
 
 function receive(request, response) {
 	response.setHeader("Content-Type", "application/json");
-	res.send("THIS IS A RESPONSE!!!!!!!!!");
+	response.send("THIS IS A RESPONSE!!!!!!!!!");
 }
 
 app.listen(process.env.PORT || 8080);
