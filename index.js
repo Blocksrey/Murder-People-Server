@@ -10,12 +10,20 @@ function receive(request, response) {
 app.get("/", receive);
 */
 
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write('Hello World!');
-  res.end();
-}).listen(8080);
+
+
+var port = process.env.PORT || 3000;
+
+app.get("/", function(req, res) {
+	res.setHeader('Content-Type', 'application/json');
+	res.send('<!DOCTYPE html><head><meta charset="UTF-8"><meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></head><body>Welcome to NodeJS App on Heroku</body></html>');
+});
+
+app.listen(port);
+
+
+
+
 
 function debug() {
 	console.log("Debug?");
