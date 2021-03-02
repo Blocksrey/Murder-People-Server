@@ -1,13 +1,9 @@
-var http = require("http");
+const http = require('http');
 
-function receive(request, res) {
-	console.log("ASDasd");
-
-	res.writeHead(200, {"Content-Type": "application/json"});
-	res.write("ASD");
-	res.end();
+const requestListener = function (req, res) {
+  res.writeHead(200);
+  res.end('Hello, World!');
 }
 
-http.createServer(receive).listen(8080);
-
-console.log("WOAHAHAHAHHHHHHHHHHHHH!!!!!!!!!!!!");
+const server = http.createServer(requestListener);
+server.listen(8080);
