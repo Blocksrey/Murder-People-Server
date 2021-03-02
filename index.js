@@ -1,10 +1,9 @@
-var express = require("express");
-var app = express();
-var port = process.env.PORT || 3000;
+var http = require("http");
 
-app.get("/", function(req, res) {
-	res.setHeader('Content-Type', 'application/json');
-	res.send('<!DOCTYPE html><head><meta charset="UTF-8"><meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></head><body>Welcome to NodeJS App on Heroku</body></html>');
-});
+function receive(request, res) {
+	res.writeHead(200, {"Content-Type": "application/json"});
+	res.write("ASD");
+	res.end();
+}
 
-app.listen(port);
+http.createServer(receive).listen(8080);
